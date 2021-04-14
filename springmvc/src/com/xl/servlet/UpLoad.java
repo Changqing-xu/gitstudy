@@ -39,6 +39,8 @@ public class UpLoad extends HttpServlet {
             try {
                 List<FileItem> list = upload.parseRequest(req);
                 //循环判断，每一个表单项是普通类型还是上传的文件
+
+
                 for (FileItem fileItem : list) {
                     if (fileItem.isFormField()) {
                         //true 普通表单项
